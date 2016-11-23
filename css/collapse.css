@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsla(150, 50%, 50%, 0.5);
+    position: relative;
+}
+
+.wrapper {
+    width: 1100px;
+    height: 1000px;
+    margin: 0 auto;
+    background: hsla(180, 50%, 50%, 0.3);
+    position: relative;
+}
+/*-----------------------------------*/
+h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    color: hsla(180, 100%, 10%, 1);
+    font-family: Tahoma;
+    text-shadow: -3px 3px 2px hsla(180, 50%, 0%, 0.2);
+}
+
+#tabs {
+    display: block;
+    float: left;
+    width: 80%;
+}
+
+aside {
+    display: block;
+    float: right;
+    width: 20%;
+    height: 30%;
+    background: hsla(190, 50%, 50%, 0.5);
+    border-radius: 20px 0 0 20px;
+    box-shadow: -2px 2px 2px 2px hsla(190, 50%, 00%, 0.5);
+}
+/*-------------------TABs------------------------------------*/
+
+#tabs ul {
+    list-style: none;
+}
+
+#tabs ul li {
+    display: inline-block;
+    height: 26px;
+    width: 220px;
+    text-indent: 25px;
+    border-radius: 20px 20px 0 0;
+    cursor: pointer;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+}
+
+#tabs ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+#tab_li1:hover{
+    border-top: 1px solid darkgreen;
+    border-left: 1px solid darkgreen;
+}
+
+#tab_li2:hover{
+    border-top: 1px solid darkgreen;
+    border-left: 1px solid darkgreen;
+}
+
+#tab_li3:hover {
+    border-top: 1px solid darkgreen;
+    border-left: 1px solid darkgreen;
+}
+
+/*---------------------------------------------------*/
+#tabs-1, #tab_li1 {
+    background: hsla(90, 50%, 50%, 1);
+
+}
+
+#tabs-2, #tab_li2 {
+    background: hsla(90, 52%, 45%, 1);
+
+}
+
+#tabs-3, #tab_li3 {
+    background: hsla(90, 54%, 40%, 1);
+}
+
+/*--------------------------------------------------------*/
+.tab_content{
+    box-shadow: -2px 2px 2px 2px hsla(190, 50%, 00%, 0.5);
+}
+
+.tab_content p {
+    font-size: 20px;
+    padding: 10px 5px 10px 15px;
+}
+/*---------------ASIDE-------------------------------*/
+aside ul {
+    list-style: none;
+}
+
+aside h3 {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+aside ul li {
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+}
+
+.h-menu__ul li a:hover{
+    border-radius: 10px;
+    background: hsla(190, 60%, 40%, 0.7);
+    padding: 0 10px;
+    transition: 0.2s;
+}
+/*---------------------------END ASIDE ----------------------------*/

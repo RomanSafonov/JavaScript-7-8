@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsla(150, 50%, 50%, 0.5);
+    position: relative;
+}
+
+.wrapper {
+    width: 1100px;
+    height: 1000px;
+    margin: 0 auto;
+    background: hsla(180, 50%, 50%, 0.3);
+    position: relative;
+}
+/* -------------------------------------------------------*/
+h1 {
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    color: hsla(180, 100%, 10%, 1);
+    font-family: Tahoma;
+    text-shadow: -3px 3px 2px hsla(180, 50%, 0%, 0.2);
+}
+
+#tabs {
+    display: block;
+    float: left;
+    width: 80%;
+}
+
+aside {
+    display: block;
+    float: right;
+    width: 20%;
+    height: 30%;
+    background: hsla(190, 50%, 50%, 0.5);
+    border-radius: 20px 0 0 20px;
+    box-shadow: -2px 2px 2px 2px hsla(190, 50%, 00%, 0.5);
+}
+
+/* --------------------------TABs------------------------------------*/
+
+#tabs ul {
+    list-style: none;
+}
+
+#tabs ul li {
+    display: inline-block;
+    height: 26px;
+    width: 220px;
+    text-indent: 25px;
+    border-radius: 20px 20px 0 0;
+    cursor: pointer;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+}
+
+#tabs ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}
+
+#tab_li1:hover{
+    border-top: 1px solid darkgreen;
+    border-left: 1px solid darkgreen;
+}
+
+#tab_li2:hover{
+    border-top: 1px solid darkgreen;
+    border-left: 1px solid darkgreen;
+}
+
+#tab_li3:hover {
+    border-top: 1px solid darkgreen;
+    border-left: 1px solid darkgreen;
+}
+/* ----------------------------------------------------- */
+#tabs-1, #tab_li1 {
+    background: hsla(90, 50%, 50%, 1);
+
+}
+
+#tabs-2, #tab_li2 {
+    background: hsla(90, 52%, 45%, 1);
+
+}
+
+#tabs-3, #tab_li3 {
+    background: hsla(90, 54%, 40%, 1);
+}
+/* -----------------------FORMs------------------------------ */
+
+form, fieldset{
+    border: none;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 10em;
+}
+
+fieldset div {
+    margin-bottom: 2em;
+}
+
+fieldset .help {
+    display: inline-block;
+}
+
+.ui-tooltip {
+    width: 210px;
+}
+
+input{
+    display: inline-block;
+    width: 25em;
+    height: 2em;
+    font-size: 18px;
+    font-family: Tahoma, sans-serif;
+    color: #004400;
+    border-radius: 10px;
+    background: hsla(100, 50%, 50%, 0.2);
+    text-indent: 5px;
+    z-index: 5;
+}
+
+input:hover {
+    transition: 0.2s;
+    background: hsla(180, 50%, 50%, 0.5);
+}
+
+#sub{
+    margin: 10px auto 25px 205px;
+    border-radius: 10px;
+    background: darkgreen;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    width: 17em;
+    border: none;
+    box-shadow: -2px 2px 2px 2px hsla(0, 100%, 0%, 0.5);
+}
+
+/* ------------------------------JS GENERATE TAGs -------- */
+.tooltip{
+    position:absolute;
+    border-radius: 25px;
+    text-indent: 15px;
+    color: #fff;
+
+    background: darkgreen;
+    padding:5px;
+    border:1px solid #fff;
+    width:250px;
+    box-shadow: -2px 2px 2px 2px hsla(0, 100%, 0%, 0.5);
+    border: 1px solid darkgreen;
+    z-index:20;
+}
+.triangle-down {
+    position:absolute;
+    /*box-shadow: 2px 2px 2px 2px hsla(0, 100%, 0%, 0.5);*/
+    /*background: transparent;*/
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid darkgreen;
+    z-index: 20;
+}
+
+.tooltip p{
+    margin:0;
+    padding:0;
+    color:#fff;
+    background: hsla(90, 54%, 40%, 1);
+    border-radius: 25px;
+    text-indent: 15px;
+    padding:2px 7px;
+}
+
+#fname{
+    left: 550px;
+    top: 165px;
+}
+
+#lname{
+    left: 550px;
+    top: 240px;
+}
+
+#e_mail{
+    left: 550px;
+    top: 320px;
+}
+
+#fname_triangle{
+    left: 570px;
+    top: 195px;
+}
+
+#lname_triangle{
+    left: 570px;
+    top: 270px;
+}
+
+#email_triangle{
+    left: 570px;
+    top: 350px;
+}
+/* --------------------------tab_content---------------------------------*/
+.tab_content{
+    box-shadow: -2px 2px 2px 2px hsla(190, 50%, 00%, 0.5);
+}
+
+.tab_content p {
+    font-size: 20px;
+    padding: 10px 5px 10px 15px;
+}
+/* ---------------------------ASIDE------------------------------------*/
+aside ul {
+    list-style: none;
+}
+
+aside h3 {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+aside ul li {
+    margin-top: 15px;
+    margin-left: 15px;
+
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+}
+
+.h-menu__ul li a:hover{
+    border-radius: 10px;
+    background: hsla(190, 60%, 40%, 0.7);
+    padding: 0 10px;
+    transition: 0.2s;
+}
